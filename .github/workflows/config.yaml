@@ -24,7 +24,7 @@ jobs:
         run: mvn -f ./backend/backend-spring/pom.xml --batch-mode test
         
       - name: Build image docker backend-spring
-        uses: mr-smithers-excellent/docker-build-push@4
+        uses: mr-smithers-excellent/docker-build-push@5
         with:
           image: tamiresviegas/backend-spring
           registry: docker.io
