@@ -1,4 +1,6 @@
 FROM openjdk:8-jdk-alpine
-ADD target/backend-spring.jar backend-spring.jar
+MAINTAINER github.com/tamiresviegas
+COPY ./target/backend-spring.jar /app/backend-spring.jar
+WORKDIR /app
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/backend-spring.jar"]
+ENTRYPOINT ["java","-jar","backend-spring.jar"]
