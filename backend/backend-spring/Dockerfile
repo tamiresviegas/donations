@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-MAINTAINER github.com/tamiresviegas
+MAINTAINER github/tamiresviegas
 COPY ./target/backend-spring.jar /app/backend-spring.jar
 WORKDIR /app
 EXPOSE 8080
